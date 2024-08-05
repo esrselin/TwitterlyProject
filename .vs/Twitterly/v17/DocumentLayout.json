@@ -1,0 +1,309 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\esras\\source\\repos\\Twitterly\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3A370FBB-32A5-49AF-B5D5-296E84DF0581}|Domain\\Domain.csproj|c:\\users\\esras\\source\\repos\\twitterly\\domain\\dbcontext\\twitterdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A370FBB-32A5-49AF-B5D5-296E84DF0581}|Domain\\Domain.csproj|solutionrelative:domain\\dbcontext\\twitterdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A370FBB-32A5-49AF-B5D5-296E84DF0581}|Domain\\Domain.csproj|c:\\users\\esras\\source\\repos\\twitterly\\domain\\entities\\userfollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A370FBB-32A5-49AF-B5D5-296E84DF0581}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\userfollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD48C82D-71D1-4FF3-8387-2008534FEBAF}|Common\\Common.csproj|c:\\users\\esras\\source\\repos\\twitterly\\common\\dto\\userfollowdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD48C82D-71D1-4FF3-8387-2008534FEBAF}|Common\\Common.csproj|solutionrelative:common\\dto\\userfollowdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B0901D4-436A-4B73-A856-E1CA07908738}|Presentation\\Presentation.csproj|c:\\users\\esras\\source\\repos\\twitterly\\presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B0901D4-436A-4B73-A856-E1CA07908738}|Presentation\\Presentation.csproj|solutionrelative:presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B0901D4-436A-4B73-A856-E1CA07908738}|Presentation\\Presentation.csproj|c:\\users\\esras\\source\\repos\\twitterly\\presentation\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{9B0901D4-436A-4B73-A856-E1CA07908738}|Presentation\\Presentation.csproj|solutionrelative:presentation\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B0901D4-436A-4B73-A856-E1CA07908738}|Presentation\\Presentation.csproj|c:\\users\\esras\\source\\repos\\twitterly\\presentation\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{9B0901D4-436A-4B73-A856-E1CA07908738}|Presentation\\Presentation.csproj|solutionrelative:presentation\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B0901D4-436A-4B73-A856-E1CA07908738}|Presentation\\Presentation.csproj|c:\\users\\esras\\source\\repos\\twitterly\\presentation\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B0901D4-436A-4B73-A856-E1CA07908738}|Presentation\\Presentation.csproj|solutionrelative:presentation\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D7B90C4-1C67-4BD9-9777-9EE5A3B08538}|Core\\Core.csproj|c:\\users\\esras\\source\\repos\\twitterly\\core\\services\\tweetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D7B90C4-1C67-4BD9-9777-9EE5A3B08538}|Core\\Core.csproj|solutionrelative:core\\services\\tweetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D7B90C4-1C67-4BD9-9777-9EE5A3B08538}|Core\\Core.csproj|c:\\users\\esras\\source\\repos\\twitterly\\core\\interfaces\\itweetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D7B90C4-1C67-4BD9-9777-9EE5A3B08538}|Core\\Core.csproj|solutionrelative:core\\interfaces\\itweetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D7B90C4-1C67-4BD9-9777-9EE5A3B08538}|Core\\Core.csproj|c:\\users\\esras\\source\\repos\\twitterly\\core\\services\\userfollowservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D7B90C4-1C67-4BD9-9777-9EE5A3B08538}|Core\\Core.csproj|solutionrelative:core\\services\\userfollowservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D7B90C4-1C67-4BD9-9777-9EE5A3B08538}|Core\\Core.csproj|c:\\users\\esras\\source\\repos\\twitterly\\core\\interfaces\\iuserfollowservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D7B90C4-1C67-4BD9-9777-9EE5A3B08538}|Core\\Core.csproj|solutionrelative:core\\interfaces\\iuserfollowservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B0901D4-436A-4B73-A856-E1CA07908738}|Presentation\\Presentation.csproj|c:\\users\\esras\\source\\repos\\twitterly\\presentation\\views\\home\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9B0901D4-436A-4B73-A856-E1CA07908738}|Presentation\\Presentation.csproj|solutionrelative:presentation\\views\\home\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A370FBB-32A5-49AF-B5D5-296E84DF0581}|Domain\\Domain.csproj|c:\\users\\esras\\source\\repos\\twitterly\\domain\\entities\\twiteruser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A370FBB-32A5-49AF-B5D5-296E84DF0581}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\twiteruser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD48C82D-71D1-4FF3-8387-2008534FEBAF}|Common\\Common.csproj|c:\\users\\esras\\source\\repos\\twitterly\\common\\dto\\twitteruserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD48C82D-71D1-4FF3-8387-2008534FEBAF}|Common\\Common.csproj|solutionrelative:common\\dto\\twitteruserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D7B90C4-1C67-4BD9-9777-9EE5A3B08538}|Core\\Core.csproj|c:\\users\\esras\\source\\repos\\twitterly\\core\\interfaces\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D7B90C4-1C67-4BD9-9777-9EE5A3B08538}|Core\\Core.csproj|solutionrelative:core\\interfaces\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D7B90C4-1C67-4BD9-9777-9EE5A3B08538}|Core\\Core.csproj|c:\\users\\esras\\source\\repos\\twitterly\\core\\interfaces\\itwitteruserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D7B90C4-1C67-4BD9-9777-9EE5A3B08538}|Core\\Core.csproj|solutionrelative:core\\interfaces\\itwitteruserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B0901D4-436A-4B73-A856-E1CA07908738}|Presentation\\Presentation.csproj|c:\\users\\esras\\source\\repos\\twitterly\\presentation\\views\\viewmodels\\followunfollowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B0901D4-436A-4B73-A856-E1CA07908738}|Presentation\\Presentation.csproj|solutionrelative:presentation\\views\\viewmodels\\followunfollowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 10,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "site.js",
+              "DocumentMoniker": "C:\\Users\\esras\\source\\repos\\Twitterly\\Presentation\\wwwroot\\js\\site.js",
+              "RelativeDocumentMoniker": "Presentation\\wwwroot\\js\\site.js",
+              "ToolTip": "C:\\Users\\esras\\source\\repos\\Twitterly\\Presentation\\wwwroot\\js\\site.js",
+              "RelativeToolTip": "Presentation\\wwwroot\\js\\site.js",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAYwCAAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-08-03T15:40:38.98Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UserFollowService.cs",
+              "DocumentMoniker": "C:\\Users\\esras\\source\\repos\\Twitterly\\Core\\Services\\UserFollowService.cs",
+              "RelativeDocumentMoniker": "Core\\Services\\UserFollowService.cs",
+              "ToolTip": "C:\\Users\\esras\\source\\repos\\Twitterly\\Core\\Services\\UserFollowService.cs",
+              "RelativeToolTip": "Core\\Services\\UserFollowService.cs",
+              "ViewState": "AQIAACUAAAAAAAAAAAAawDkAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-04T13:54:59.304Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\esras\\source\\repos\\Twitterly\\Presentation\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Presentation\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\esras\\source\\repos\\Twitterly\\Presentation\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Presentation\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAF4AAAAAAAAAAAAmwHYAAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-03T13:38:57.928Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserFollow.cs",
+              "DocumentMoniker": "C:\\Users\\esras\\source\\repos\\Twitterly\\Domain\\Entities\\UserFollow.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\UserFollow.cs",
+              "ToolTip": "C:\\Users\\esras\\source\\repos\\Twitterly\\Domain\\Entities\\UserFollow.cs",
+              "RelativeToolTip": "Domain\\Entities\\UserFollow.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-03T19:09:06.888Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserFollowDTO.cs",
+              "DocumentMoniker": "C:\\Users\\esras\\source\\repos\\Twitterly\\Common\\DTO\\UserFollowDTO.cs",
+              "RelativeDocumentMoniker": "Common\\DTO\\UserFollowDTO.cs",
+              "ToolTip": "C:\\Users\\esras\\source\\repos\\Twitterly\\Common\\DTO\\UserFollowDTO.cs",
+              "RelativeToolTip": "Common\\DTO\\UserFollowDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-03T20:16:39.029Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TweetService.cs",
+              "DocumentMoniker": "C:\\Users\\esras\\source\\repos\\Twitterly\\Core\\Services\\TweetService.cs",
+              "RelativeDocumentMoniker": "Core\\Services\\TweetService.cs",
+              "ToolTip": "C:\\Users\\esras\\source\\repos\\Twitterly\\Core\\Services\\TweetService.cs",
+              "RelativeToolTip": "Core\\Services\\TweetService.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAEwBUAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-04T12:00:26.273Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "TwiterUser.cs",
+              "DocumentMoniker": "C:\\Users\\esras\\source\\repos\\Twitterly\\Domain\\Entities\\TwiterUser.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\TwiterUser.cs",
+              "ToolTip": "C:\\Users\\esras\\source\\repos\\Twitterly\\Domain\\Entities\\TwiterUser.cs",
+              "RelativeToolTip": "Domain\\Entities\\TwiterUser.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAkwAoAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-03T20:16:52.233Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Dashboard.cshtml",
+              "DocumentMoniker": "C:\\Users\\esras\\source\\repos\\Twitterly\\Presentation\\Views\\Home\\Dashboard.cshtml",
+              "RelativeDocumentMoniker": "Presentation\\Views\\Home\\Dashboard.cshtml",
+              "ToolTip": "C:\\Users\\esras\\source\\repos\\Twitterly\\Presentation\\Views\\Home\\Dashboard.cshtml",
+              "RelativeToolTip": "Presentation\\Views\\Home\\Dashboard.cshtml",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAgwEkAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-03T20:17:48.575Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\esras\\source\\repos\\Twitterly\\Presentation\\appsettings.json",
+              "RelativeDocumentMoniker": "Presentation\\appsettings.json",
+              "ToolTip": "C:\\Users\\esras\\source\\repos\\Twitterly\\Presentation\\appsettings.json",
+              "RelativeToolTip": "Presentation\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-08-05T13:26:31.701Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IUserFollowService.cs",
+              "DocumentMoniker": "C:\\Users\\esras\\source\\repos\\Twitterly\\Core\\Interfaces\\IUserFollowService.cs",
+              "RelativeDocumentMoniker": "Core\\Interfaces\\IUserFollowService.cs",
+              "ToolTip": "C:\\Users\\esras\\source\\repos\\Twitterly\\Core\\Interfaces\\IUserFollowService.cs",
+              "RelativeToolTip": "Core\\Interfaces\\IUserFollowService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAYAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-04T15:15:53.219Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TwitterDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\esras\\source\\repos\\Twitterly\\Domain\\DbContext\\TwitterDbContext.cs",
+              "RelativeDocumentMoniker": "Domain\\DbContext\\TwitterDbContext.cs",
+              "ToolTip": "C:\\Users\\esras\\source\\repos\\Twitterly\\Domain\\DbContext\\TwitterDbContext.cs",
+              "RelativeToolTip": "Domain\\DbContext\\TwitterDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAcwAcAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-05T10:39:39.388Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "TwitterUserDTO.cs",
+              "DocumentMoniker": "C:\\Users\\esras\\source\\repos\\Twitterly\\Common\\DTO\\TwitterUserDTO.cs",
+              "RelativeDocumentMoniker": "Common\\DTO\\TwitterUserDTO.cs",
+              "ToolTip": "C:\\Users\\esras\\source\\repos\\Twitterly\\Common\\DTO\\TwitterUserDTO.cs",
+              "RelativeToolTip": "Common\\DTO\\TwitterUserDTO.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAkAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-03T20:16:38.02Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\esras\\source\\repos\\Twitterly\\Presentation\\Program.cs",
+              "RelativeDocumentMoniker": "Presentation\\Program.cs",
+              "ToolTip": "C:\\Users\\esras\\source\\repos\\Twitterly\\Presentation\\Program.cs",
+              "RelativeToolTip": "Presentation\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-04T14:36:53.799Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ITweetService.cs",
+              "DocumentMoniker": "C:\\Users\\esras\\source\\repos\\Twitterly\\Core\\Interfaces\\ITweetService.cs",
+              "RelativeDocumentMoniker": "Core\\Interfaces\\ITweetService.cs",
+              "ToolTip": "C:\\Users\\esras\\source\\repos\\Twitterly\\Core\\Interfaces\\ITweetService.cs",
+              "RelativeToolTip": "Core\\Interfaces\\ITweetService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAsAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-04T13:53:04.628Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ITwitterUserService.cs",
+              "DocumentMoniker": "C:\\Users\\esras\\source\\repos\\Twitterly\\Core\\Interfaces\\ITwitterUserService.cs",
+              "RelativeDocumentMoniker": "Core\\Interfaces\\ITwitterUserService.cs",
+              "ToolTip": "C:\\Users\\esras\\source\\repos\\Twitterly\\Core\\Interfaces\\ITwitterUserService.cs",
+              "RelativeToolTip": "Core\\Interfaces\\ITwitterUserService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-04T13:53:09.612Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "IUnitOfWork.cs",
+              "DocumentMoniker": "C:\\Users\\esras\\source\\repos\\Twitterly\\Core\\Interfaces\\IUnitOfWork.cs",
+              "RelativeDocumentMoniker": "Core\\Interfaces\\IUnitOfWork.cs",
+              "ToolTip": "C:\\Users\\esras\\source\\repos\\Twitterly\\Core\\Interfaces\\IUnitOfWork.cs",
+              "RelativeToolTip": "Core\\Interfaces\\IUnitOfWork.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-04T13:53:14.369Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "FollowUnfollowViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\esras\\source\\repos\\Twitterly\\Presentation\\Views\\ViewModels\\FollowUnfollowViewModel.cs",
+              "RelativeDocumentMoniker": "Presentation\\Views\\ViewModels\\FollowUnfollowViewModel.cs",
+              "ToolTip": "C:\\Users\\esras\\source\\repos\\Twitterly\\Presentation\\Views\\ViewModels\\FollowUnfollowViewModel.cs",
+              "RelativeToolTip": "Presentation\\Views\\ViewModels\\FollowUnfollowViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAIAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-03T20:28:28.921Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

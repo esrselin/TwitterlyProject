@@ -1,0 +1,47 @@
+﻿@page
+@model Presentation.Areas.Identity.Pages.Account.LoginModel
+@{
+    ViewData["Title"] = "Log in";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<div class="form-container">
+    <h2>Log in to Twitter</h2>
+    <form id="account" method="post">
+        <hr />
+        <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
+        <div class="form-floating mb-3">
+            <input asp-for="Input.Login" class="form-control" autocomplete="username" aria-required="true" placeholder="Phone, email, or username" />
+            <label asp-for="Input.Login" class="form-label">Phone, email, or username</label>
+            <span asp-validation-for="Input.Login" class="text-danger"></span>
+        </div>
+        <div class="form-floating mb-3">
+            <input asp-for="Input.Password" class="form-control" autocomplete="current-password" aria-required="true" placeholder="Password" />
+            <label asp-for="Input.Password" class="form-label">Password</label>
+            <span asp-validation-for="Input.Password" class="text-danger"></span>
+        </div>
+        <div class="checkbox mb-3">
+            <label asp-for="Input.RememberMe" class="form-label">
+                <input class="form-check-input" asp-for="Input.RememberMe" />
+                Remember me
+            </label>
+        </div>
+        <div>
+            <button id="login-submit" type="submit" class="btn btn-primary btn-block">Log in</button>
+        </div>
+        <div class="additional-links mt-3">
+            <p>
+                <a id="forgot-password" asp-page="./ForgotPassword">Forgot password?</a>
+            </p>
+            <p>
+                <a asp-page="./Register">Sign up for Twitter</a>
+            </p>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

@@ -1,0 +1,85 @@
+﻿@model Twitter.Models.ViewModels.DashboardViewModel
+@{
+    ViewData["Title"] = "Dashboard";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container-sss">
+    <div class="rowss">
+        <div class="col-md-2 sidebar">
+            <nav class="nav flex-column">
+                <a href="#" class="nav-link active"><i class="fas fa-home"></i> Home</a>
+                <a href="#" class="nav-link"><i class="fas fa-hashtag"></i> Explore</a>
+                <a href="#" class="nav-link"><i class="fas fa-bell"></i> Notifications</a>
+                <a href="#" class="nav-link"><i class="fas fa-envelope"></i> Messages</a>
+                <a href="#" class="nav-link"><i class="fas fa-bookmark"></i> Bookmarks</a>
+                <a href="#" class="nav-link"><i class="fas fa-list"></i> Lists</a>
+                <a href="#" class="nav-link"><i class="fas fa-user"></i> Profile</a>
+                <a href="#" class="nav-link"><i class="fas fa-ellipsis-h"></i> More</a>
+            </nav>
+            <button class="btn btn-primary tweet-btn" onclick="scrollToTweetBox()"><i class="fas fa-feather-alt"></i> Tweet</button>
+        </div>
+
+        <div class="col-md-7 main-content">
+            <h3>Home</h3>
+            <div class="tweet-box">
+                <div class="form-group">
+                    <textarea id="tweetContent" class="form-control" name="content" rows="3" placeholder="What's happening?"></textarea>
+                </div>
+                <button type="button" class="btn btn-primary" onclick="postTweet()">Tweet</button>
+            </div>
+
+            @if (Model?.Tweets != null)
+            {
+                <div class="tweet-feed">
+                    @foreach (var tweet in Model.Tweets)
+                    {
+                        <div class="tweet">
+                            <time>@tweet.CreatedAt.ToLocalTime()</time>
+                            <p>
+                                <strong>@tweet.TwitterUser.FirstName @tweet.TwitterUser.LastName</strong>
+                                <span class="text-muted">@tweet.TwitterUser.UserName</span>
+                            </p>
+                            <p>@tweet.Content</p>
+                            <div class="tweet-actions">
+                                <i class="fas fa-comment"></i>
+                                <i class="fas fa-retweet"></i>
+                                <i class="fas fa-heart"></i>
+                            </div>
+                        </div>
+                    }
+                </div>
+            }
+            else
+            {
+                <p>No tweets available.</p>
+            }
+        </div>
+
+        <div class="col-md-3 right-sidebar">
+            <aside>
+                <input type="text" class="form-control mb-3" placeholder="Search Twitter">
+                <h3>Who to follow</h3>
+                <ul class="list-group">
+                    @if (Model?.RecentUsers != null)
+                    {
+                        @foreach (var user in Model.RecentUsers)
+                        {
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <div>
+                                    <strong>@user.FirstName @user.LastName</strong>
+                                    <br />
+                                    <span class="text-muted">@user.UserName</span>
+                                </div>
+                                <button type="button" class="btn btn-link follow-button"
+                                        onclick="toggleFollow('@user.Id', this)">
+                                    Follow
+                                </button>
+                            </li>
+                        }
+                    }
+                </ul>
+            </aside>
+        </div>
+    </div>
+</div>
