@@ -1,11 +1,8 @@
-﻿
-using Common.DTO;
+﻿using Common.DTO;
 using Core.Interfaces;
-using Microsoft.EntityFrameworkCore;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Domain.Entities;
+using Microsoft.EntityFrameworkCore;
+
 
 namespace Core.Services
 {
@@ -19,7 +16,7 @@ namespace Core.Services
         }
 
         // Kullanıcının tweetlerini alır ve DTO'lara dönüştürür.
-        public async Task<List<TweetDTO>> GetTweetsByUserIdsAsync(IEnumerable<string> userIds)
+        public async Task<List<TweetDTO>> GetTweetsByUserIdsAsync(IEnumerable<int> userIds)
         {
             var tweets = await _context.Tweets
                 .Include(t => t.TwitterUser)
@@ -31,7 +28,10 @@ namespace Core.Services
                     Content = t.Content,
                     UserId = t.UserId,
                     CreatedAt = t.CreatedAt,
-                    TwitterUser = t.TwitterUser
+                    FirstName = t.TwitterUser.FirstName,  // TwitterUser.FirstName
+                    LastName = t.TwitterUser.LastName,    // TwitterUser.LastName
+                    UserName = t.TwitterUser.UserName     // TwitterUser.UserName
+                    //TwitterUser = t.TwitterUser
                 })
                 .ToListAsync();
 
@@ -67,6 +67,17 @@ namespace Core.Services
             tweetDto.Id = tweetEntity.Id;
         }
 
+        public IQueryable<UserTweetCountDTO> GetUserTweetCountsAsync()
+        {
+            var userTweetCounts = _context.Users
+                .Select(u => new UserTweetCountDTO
+                {
+                    UserName = u.UserName,
+                    TweetCount = u.Tweets.Count()
+                });
+
+            return userTweetCounts.AsQueryable(); // IQueryable olarak döndürüyoruz
+        }
 
 
 

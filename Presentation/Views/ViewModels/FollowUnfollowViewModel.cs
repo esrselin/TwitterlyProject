@@ -1,5 +1,7 @@
-﻿public class FollowUnfollowViewModel
+﻿namespace Presentation.Views.ViewModels
 {
-    public string UserId { get; set; }
-
+    public class FollowUnfollowViewModel
+    {
+        public int UserId { get; set; }
+    }
 }

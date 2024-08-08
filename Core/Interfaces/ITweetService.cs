@@ -9,7 +9,9 @@ namespace Core.Interfaces
 {
     public interface ITweetService
     {
-        Task<List<TweetDTO>> GetTweetsByUserIdsAsync(IEnumerable<string> userIds);
+        Task<List<TweetDTO>> GetTweetsByUserIdsAsync(IEnumerable<int> userIds);
         Task AddTweetAsync(TweetDTO tweet);
+
+        IQueryable<UserTweetCountDTO> GetUserTweetCountsAsync();
     }
 }

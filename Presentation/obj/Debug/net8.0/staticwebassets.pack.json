@@ -17,6 +17,18 @@
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
+      "Id": "C:\\Users\\esras\\source\\repos\\Twitterly\\Presentation\\wwwroot\\lib\\NonfactorMvcGrid\\dist\\css\\mvc-grid\\fonts\\grid-glyphs.woff",
+      "PackagePath": "staticwebassets\\lib\\NonfactorMvcGrid\\dist\\css\\mvc-grid\\fonts\\grid-glyphs.woff"
+    },
+    {
+      "Id": "C:\\Users\\esras\\source\\repos\\Twitterly\\Presentation\\wwwroot\\lib\\NonfactorMvcGrid\\dist\\css\\mvc-grid\\mvc-grid.css",
+      "PackagePath": "staticwebassets\\lib\\NonfactorMvcGrid\\dist\\css\\mvc-grid\\mvc-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\esras\\source\\repos\\Twitterly\\Presentation\\wwwroot\\lib\\NonfactorMvcGrid\\dist\\js\\mvc-grid.js",
+      "PackagePath": "staticwebassets\\lib\\NonfactorMvcGrid\\dist\\js\\mvc-grid.js"
+    },
+    {
       "Id": "C:\\Users\\esras\\source\\repos\\Twitterly\\Presentation\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },

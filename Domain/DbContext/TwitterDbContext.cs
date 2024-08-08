@@ -1,9 +1,11 @@
-﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+
 
 namespace Domain.Entities
 {
-    public class TwitterDbContext : IdentityDbContext<TwitterUser>
+    public class TwitterDbContext : IdentityDbContext<TwitterUser, IdentityRole<int>, int>
     {
         public TwitterDbContext(DbContextOptions options)
             : base(options)
@@ -16,11 +18,11 @@ namespace Domain.Entities
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-
-            // Configuring UserFollow relationships
+            // UserFollow için composite key tanımlıyoruz
             modelBuilder.Entity<UserFollow>()
                 .HasKey(uf => new { uf.FollowerId, uf.FolloweeId });
 
+            // Follower ve Followee ilişkilerini tanımlıyoruz
             modelBuilder.Entity<UserFollow>()
                 .HasOne(uf => uf.Follower)
                 .WithMany(u => u.Followings)

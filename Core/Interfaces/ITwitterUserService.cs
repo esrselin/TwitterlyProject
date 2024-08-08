@@ -9,7 +9,7 @@ namespace Core.Interfaces
 {
     public interface ITwitterUserService
     {
-        Task<TwitterUserDTO> GetUserByIdAsync(string userId);
-        Task<List<TwitterUserDTO>> GetRecentUsersAsync(string excludeUserId, int count);
+        Task<TwitterUserDTO> GetUserByIdAsync(int userId);
+        Task<List<TwitterUserDTO>> GetRecentUsersAsync(int excludeUserId, int count);
     }
 }

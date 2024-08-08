@@ -1,0 +1,21 @@
+﻿@model IQueryable<Presentation.Views.ViewModels.UserTweetCountViewModel>
+@using NonFactors.Mvc.Grid
+
+<h2 class="mb-4">User Tweet Counts</h2>
+
+@(Html
+.Grid(Model).
+Build(columns =>
+
+    {
+        columns.Add(model => model.UserName).Titled("User Name").Sortable(true).Filterable(true); 
+        columns.Add(model => model.TweetCount).Titled("Tweet Count").Sortable(true).Filterable(true);
+    }).Pageable(paging => paging.RowsPerPage = 10) 
+    )
+     
+    @*
+        colums.Add(c=>c...) ile sütün ekliyoruz. Sonra Title ile ismini beliriliyoruz.
+        Sortable: Sıralabilir
+        Filtrable: Filtrelenebilir
+        Pageable ise pagination özelliği ekliyor bu kodda her sayfada 10 satır gösteriliyor.
+    *@

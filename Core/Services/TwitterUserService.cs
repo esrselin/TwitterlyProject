@@ -2,9 +2,6 @@
 using Core.Interfaces;
 using Domain.Entities;
 using Microsoft.EntityFrameworkCore;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace Core.Services
 {
@@ -18,7 +15,7 @@ namespace Core.Services
         }
 
         // Belirli bir kullanıcıyı veritabanından almak ve istemcilere DTO formatında dönmek için
-        public async Task<TwitterUserDTO> GetUserByIdAsync(string userId)
+        public async Task<TwitterUserDTO> GetUserByIdAsync(int userId)
         {
             var user = await _context.Users
                 .Include(u => u.Tweets)
@@ -32,7 +29,6 @@ namespace Core.Services
                 Id = user.Id,
                 UserName = user.UserName,
                 Email = user.Email,
-                PhoneNumber = user.PhoneNumber,
                 FirstName = user.FirstName,
                 LastName = user.LastName,
                 Tweets = user.Tweets.Select(t => new TweetDTO
@@ -42,14 +38,14 @@ namespace Core.Services
                     UserId = t.UserId,
                     CreatedAt = t.CreatedAt
                 }).ToList(),
-                // FollowingIds ve FollowerIds gibi özellikler varsa manuel eklemelisiniz
+                
             };
 
             return userDto;
         }
 
         // Who To Follow
-        public async Task<List<TwitterUserDTO>> GetRecentUsersAsync(string excludeUserId, int count)
+        public async Task<List<TwitterUserDTO>> GetRecentUsersAsync(int excludeUserId, int count)
         {
             var users = await _context.Users
                 .Where(u => u.Id != excludeUserId)
@@ -63,7 +59,7 @@ namespace Core.Services
                 Id = u.Id,
                 UserName = u.UserName,
                 Email = u.Email,
-                PhoneNumber = u.PhoneNumber,
+                
                 FirstName = u.FirstName,
                 LastName = u.LastName,
                 Tweets = u.Tweets.Select(t => new TweetDTO

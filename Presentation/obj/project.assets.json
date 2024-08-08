@@ -2135,6 +2135,24 @@
           }
         }
       },
+      "NonFactors.Grid.Core.Mvc6/7.2.1": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Mvc.Grid.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Mvc.Grid.Core.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "NonFactors.Grid.Mvc6/7.2.1": {
+        "type": "package",
+        "dependencies": {
+          "NonFactors.Grid.Core.Mvc6": "[7.2.1]"
+        }
+      },
       "NuGet.Common/6.9.1": {
         "type": "package",
         "dependencies": {
@@ -7036,6 +7054,34 @@
         "packageIcon.png"
       ]
     },
+    "NonFactors.Grid.Core.Mvc6/7.2.1": {
+      "sha512": "RiUowrHoEYE+cHTeA5ABQ6BYCJpGJ9HWejShnD846N2jdXJkScp3wZy29aAM8+EADO9nn929An8lJegpjOIg6A==",
+      "type": "package",
+      "path": "nonfactors.grid.core.mvc6/7.2.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net6.0/Mvc.Grid.Core.dll",
+        "nonfactors.grid.core.mvc6.7.2.1.nupkg.sha512",
+        "nonfactors.grid.core.mvc6.nuspec"
+      ]
+    },
+    "NonFactors.Grid.Mvc6/7.2.1": {
+      "sha512": "veIWp7efQHcgFLzFSVkJGuTC1sGzuuabOGA5+r28x9ug7xQZHxdN6+opuVJHW76whThc7Wffl5I5sN8NYZ/zIQ==",
+      "type": "package",
+      "path": "nonfactors.grid.mvc6/7.2.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/Views/Shared/MvcGrid/_Grid.cshtml",
+        "content/Views/Shared/MvcGrid/_Pager.cshtml",
+        "content/css/mvc-grid/fonts/grid-glyphs.woff",
+        "content/css/mvc-grid/mvc-grid.css",
+        "content/js/mvc-grid/mvc-grid.js",
+        "nonfactors.grid.mvc6.7.2.1.nupkg.sha512",
+        "nonfactors.grid.mvc6.nuspec"
+      ]
+    },
     "NuGet.Common/6.9.1": {
       "sha512": "FbuWZBjQ1NJXBDqCwSddN2yvw3Plq3sTCIh0nc66Hu8jrNr+BOaxlKZv78jvJ+pSy8BvurYOdF9sl9KoORjrtg==",
       "type": "package",
@@ -8664,7 +8710,6 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "AutoMapper >= 13.0.1",
       "Common >= 1.0.0",
       "Core >= 1.0.0",
       "Domain >= 1.0.0",
@@ -8674,7 +8719,9 @@
       "Microsoft.EntityFrameworkCore.SqlServer >= 8.0.7",
       "Microsoft.EntityFrameworkCore.Sqlite >= 8.0.7",
       "Microsoft.EntityFrameworkCore.Tools >= 8.0.7",
-      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 8.0.3"
+      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 8.0.3",
+      "NonFactors.Grid.Core.Mvc6 >= 7.2.1",
+      "NonFactors.Grid.Mvc6 >= 7.2.1"
     ]
   },
   "packageFolders": {
@@ -8732,10 +8779,6 @@
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
-          "AutoMapper": {
-            "target": "Package",
-            "version": "[13.0.1, )"
-          },
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
             "target": "Package",
             "version": "[8.0.7, )"
@@ -8765,6 +8808,14 @@
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
             "version": "[8.0.3, )"
+          },
+          "NonFactors.Grid.Core.Mvc6": {
+            "target": "Package",
+            "version": "[7.2.1, )"
+          },
+          "NonFactors.Grid.Mvc6": {
+            "target": "Package",
+            "version": "[7.2.1, )"
           }
         },
         "imports": [

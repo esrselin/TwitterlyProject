@@ -1,10 +1,9 @@
-﻿using System.Collections.Generic;
+﻿using Microsoft.AspNetCore.Identity;
 using System.ComponentModel.DataAnnotations.Schema;
-using Microsoft.AspNetCore.Identity;
 
 namespace Domain.Entities
 {
-    public class TwitterUser : IdentityUser
+    public class TwitterUser : IdentityUser<int>
     {
         [PersonalData]
         [Column(TypeName = "nvarchar(100)")]
@@ -14,12 +13,11 @@ namespace Domain.Entities
         [Column(TypeName = "nvarchar(100)")]
         public string LastName { get; set; }
 
-        public ICollection<Tweet> Tweets { get; set; } = new List<Tweet>();
+        public virtual ICollection<Tweet> Tweets { get; set; }
 
         // Followings: Users that this user is following
-        public ICollection<UserFollow> Followings { get; set; } = new List<UserFollow>();
-
+        public virtual ICollection<UserFollow> Followings { get; set; }
         // Followers: Users that are following this user
-        public ICollection<UserFollow> Followers { get; set; } = new List<UserFollow>();
+        public virtual ICollection<UserFollow> Followers { get; set; }
     }
 }

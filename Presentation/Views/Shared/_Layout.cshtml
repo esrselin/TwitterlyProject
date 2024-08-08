@@ -6,9 +6,11 @@
     <title>@ViewData["Title"] - Twitter</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/css/Twitter.styles.css" asp-append-version="true" />
+    <link href="~/lib/NonfactorMvcGrid/dist/css/mvc-grid/mvc-grid.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
 </head>
 <body>
     <header>
@@ -30,12 +32,18 @@
     <div class="container-main">
         <main role="main" class="pb-6">
             @RenderBody()
+
         </main>
     </div>
-
+    <script src="~/lib/NonfactorMvcGrid/dist/js/mvc-grid.js"></script>
+    <script>
+        document.querySelectorAll(".mvc-grid").forEach(element => new MvcGrid(element));
+    </script>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+
+   
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 <footer class="footer text-muted">

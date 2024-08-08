@@ -8,10 +8,10 @@ namespace Common.DTO
 {
     public class UserFollowDTO
     {
-        public string FollowerId { get; set; }
+        public int FollowerId { get; set; }
         //public string FollowerUserName { get; set; }
 
-        public string FolloweeId { get; set; }
+        public int FolloweeId { get; set; }
         //public string FolloweeUserName { get; set; }
 
         //// Yeni özellikler

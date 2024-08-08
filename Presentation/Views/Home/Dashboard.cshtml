@@ -1,4 +1,4 @@
-﻿@model Twitter.Models.ViewModels.DashboardViewModel
+﻿@model Presentation.Views.ViewModels.DashboardViewModel
 @{
     ViewData["Title"] = "Dashboard";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -29,12 +29,12 @@
                 <button type="button" class="btn btn-primary" onclick="postTweet()">Tweet</button>
             </div>
 
-            @if (Model?.Tweets != null)
+            @if (Model?.Tweets != null && Model.Tweets.Any())
             {
-                <div class="tweet-feed">
+                <div id="tweets-container" class="tweet-feed">
                     @foreach (var tweet in Model.Tweets)
                     {
-                        <div class="tweet">
+                        <div class="tweet" id="tweet-@tweet.Id">
                             <time>@tweet.CreatedAt.ToLocalTime()</time>
                             <p>
                                 <strong>@tweet.TwitterUser.FirstName @tweet.TwitterUser.LastName</strong>
@@ -61,19 +61,21 @@
                 <input type="text" class="form-control mb-3" placeholder="Search Twitter">
                 <h3>Who to follow</h3>
                 <ul class="list-group">
-                    @if (Model?.RecentUsers != null)
+                    @if (Model?.RecentUsers != null && Model.RecentUsers.Any())
                     {
                         @foreach (var user in Model.RecentUsers)
                         {
+                            var isFollowing = Model.FollowingUsers.Contains(user.Id);
                             <li class="list-group-item d-flex justify-content-between align-items-center">
                                 <div>
                                     <strong>@user.FirstName @user.LastName</strong>
                                     <br />
                                     <span class="text-muted">@user.UserName</span>
                                 </div>
-                                <button type="button" class="btn btn-link follow-button"
-                                        onclick="toggleFollow('@user.Id', this)">
-                                    Follow
+                                <button type="button"
+                                        class="btn btn-link follow-button @(isFollowing ? "unfollow-btn" : "follow-btn")"
+                                        data-userid="@user.Id">
+                                    @(isFollowing ? "Unfollow" : "Follow")
                                 </button>
                             </li>
                         }
@@ -81,5 +83,7 @@
                 </ul>
             </aside>
         </div>
+
+
     </div>
 </div>
