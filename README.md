@@ -13,6 +13,7 @@ This project focuses on **clean architecture, separation of concerns, and scalab
 - Follow & unfollow users
 - Personalized timeline (own tweets + followed users’ tweets)
 - Tweet count statistics per user
+- Redis caching for frequently accessed data (for example: timeline and user stats)
 - Clean layered architecture
 - Entity Framework Core with SQL Server
 - Razor Pages & MVC hybrid structure
@@ -109,6 +110,7 @@ TwitterlyProject
 - **ASP.NET Core Identity**
 - **Entity Framework Core**
 - **SQL Server**
+- **Redis**
 - **C#**
 - **Razor**
 
@@ -120,6 +122,7 @@ TwitterlyProject
 
 - .NET SDK 8.0
 - SQL Server (LocalDB or full instance)
+- Redis (local)
 
 ---
 
